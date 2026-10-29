@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bookshelf</title>
+    </head>
+
+    <body class="h-screen bg-gray-300 flex flex-row px-4 font-serif">
+
+        <aside
+            class="border-r-[0.1rem] border-gray-900 pt-4 w-52 h-screen pr-4 flex flex-col content-between gap-96">
+
+            <div class="flex flex-col">
+
+                <div
+                    class="logomark hover:cursor-pointer flex items-center gap-1.5">
+                    <div class="bg-amber-800 rounded-sm p-1">
+                        <svg class="h-6"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 256 256"><rect width="256" height="256"
+                                fill="none" /><path
+                                d="M48,216a24,24,0,0,1,24-24H208V32H72A24,24,0,0,0,48,56Z"
+                                fill="none" stroke="white"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="16" /><polyline
+                                points="48 216 48 224 192 224" fill="none"
+                                stroke="white" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="16" /></svg>
+                    </div>
+                    <h1 class="text-lg">Bookshelf</h1>
+                </div>
+
+                <!-- search bar item-2 -->
+                <div class="search-bar">
+                    <input type="search" id="search"
+                        placeholder="Search shelves">
+                </div>
+
+                <!-- item3: navlinks -->
+                <div class="nav-bar flex flex-col">
+                    <span>LIBRARY</span>
+                    <ul class="flex flex-col">
+                        <li>
+                            <!-- svg -->
+                            <div class="flex flex-row justify-between">
+                                <span>All Books</span>
+                                <span>45</span>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- svg -->
+                            <div class="flex flex-row justify-between">
+                                <span>Currently Reading</span>
+                                <span>5</span>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- svg -->
+                            <div class="flex flex-row justify-between">
+                                <span>Want to Read</span>
+                                <span>15</span>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- svg -->
+                            <div class="flex flex-row justify-between">
+                                <span>Read</span>
+                                <span>20</span>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- svg -->
+                            <div class="flex flex-row justify-between">
+                                <span>Favorites</span>
+                                <span>5</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="records flex">
+                <span>READING GOAL</span>
+
+            </div>
+        </aside>
+
+        <main class="bg-gray-50 pt-4 w-full">
+            <div class="flex justify-end gap-4 border-b-[0.1rem] pb-4">
+                <input type="search" id placeholder="Search books...">
+                <!-- should work alphabetically color coded -->
+                <div
+                    class="dp rounded-full text-amber-50 bg-yellow-700 p-2"
+                    id="dp">
+                    <span>MS</span>
+                </div>
+            </div>
+
+            <div class="flex justify-between items-center px-4">
+                <div>
+                    <span class="text-2xl">Currently Reading</span>
+                    <span class="text-sm text-gray-500">5 books</span>
+                </div>
+                <div>
+                    <!-- svg icon -->
+                    <span>Sort by: Recent</span>
+                </div>
+            </div>
+
+            <div class="books-container grid gap-4 p-4"
+                id="books-container"></div>
+
+            <!-- <div>
+                <div>
+                    <img src alt>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <p>Project Hail Mary</p>
+                            <span>Andy Wer</span>
+                        </div>
+                        <button id="category">Science Fiction</button>
+                    </div>
+
+                    <div>
+                        <div>
+                            <span>Progress</span>
+                            <span id="actual-progress">65%</span>
+                        </div>
+                        <div class="progress" id="progress">
+                            <div id="progress-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>

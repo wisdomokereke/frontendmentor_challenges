@@ -1,0 +1,24 @@
+📝Brief
+Your challenge is to build a personal practice tracker where users log sessions, manage skills, track streaks, and visualize their consistency through heatmaps and progress rings. There's no Figma file for this challenge — you'll make all the design decisions yourself.
+
+We provide a brand kit with design tokens, sample data with 6 skills and 47 practice sessions, and detailed specs in the starter code. You can use any tools you like to help you complete the challenge.
+
+We provide the data in a local JSON file, allowing you to populate the content on first load in "guest mode". We recommend building this project as a full-stack application, though.
+
+Your users should be able to:
+
+Create and manage skills they're learning, with optional colors and goals
+Log practice sessions with duration, date, and optional notes
+Track streaks — consecutive days of practice per skill and overall
+Set weekly or total-hours goals per skill and track their pace
+Visualize practice activity over time through a heatmap calendar
+Sign up for an account or try the app as a guest with pre-loaded content
+See a landing page that communicates the product's value
+View the optimal layout for the app depending on their device's screen size
+These features don't have a spec — you make the product decisions:
+
+Dashboard & progress visualization: How do you organize skills, streaks, hours, and the heatmap into a layout that feels motivating and scannable at a glance?
+Session logging UX: How do you design a logging flow that captures meaningful data in under 30 seconds and feels satisfying rather than tedious?
+Download the project and go through the README.md file. This will provide further details about the project and help you get set up.
+
+Want some support on the challenge? Join our community and ask questions in the help channel.

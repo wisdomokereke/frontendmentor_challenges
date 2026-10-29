@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flashcard</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="../assets/flashcard-icon.png"
+            type="image/x-icon">
+    </head>
+    <body>
+
+        <header class="header">
+            <div class="logomark">
+                <img src="../assets/flashcard-icon.png" alt="logo icon"
+                    id="logo" />
+                <h3>Flashcard</h3>
+            </div>
+            <div class="screen-toggle">
+                <div class="study-mode" id="study-mode">Study Mode</div>
+                <div class="all-cards" id="all-cards">All Cards</div>
+            </div>
+        </header>
+
+        <main>
+            <section class="card-display">
+                <div class="row1">
+                    <div>
+                        <button id="categories">
+                            <span>All Categories
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 256 256"><rect width="256"
+                                    height="256" fill="none" /><polyline
+                                    points="208 96 128 176 48 96" fill="none"
+                                    stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="16" /></svg>
+                        </button>
+                        <div>
+                            <input type="checkbox" name="mastered"
+                                id="mastered">
+                            <div id="check-mastered-text">
+                                <span>Hide Mastered</span>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button id="shuffle">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 256 256"><rect width="256" height="256"
+                                fill="none" /><path
+                                d="M32,72H55.06a64,64,0,0,1,52.08,26.8l41.72,58.4A64,64,0,0,0,200.94,184H232"
+                                fill="none" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="16" /><polyline
+                                points="208 48 232 72 208 96" fill="none"
+                                stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="16" /><polyline
+                                points="208 160 232 184 208 208" fill="none"
+                                stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="16" /><path
+                                d="M147.66,100.47l1.2-1.67A64,64,0,0,1,200.94,72H232"
+                                fill="none" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="16" /><path
+                                d="M32,184H55.06a64,64,0,0,0,52.08-26.8l1.2-1.67"
+                                fill="none" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="16" /></svg>
+                        <span>Shuffle</span>
+                    </button>
+                </div>
+
+                <div class="row2">
+                    <div>
+                        <span id="courses">Web Development</span>
+                    </div>
+
+                    <div class="question-tab">
+                        <h1 id="question">What does HTML stand for?</h1>
+                        <p id="reveal-answer-btn">Click to reveal answer</p>
+                    </div>
+
+                    <div class="progress" id="progress">
+                        <div class="progress-bar" id="progress-bar"></div>
+                        <div>
+                            <span>0</span>/<span
+                                id="total-questions">5</span></div>
+                    </div>
+                </div>
+
+                <div class="row3">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 256 256"><rect width="256" height="256"
+                                fill="none" /><polyline
+                                points="88 136 112 160 168 104" fill="none"
+                                stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="16" /><circle cx="128" cy="128"
+                                r="96" fill="none" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="16" /></svg>
+                        <span>I know this!</span>
+                    </button>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 256 256"><rect width="256" height="256"
+                                fill="none" /><polyline
+                                points="24 56 24 104 72 104" fill="none"
+                                stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="16" /><path
+                                d="M67.59,192A88,88,0,1,0,65.77,65.77L24,104"
+                                fill="none" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="16" /></svg>
+                        <span>Reset Progress</span>
+                    </button>
+                </div>
+
+                <div class="row4">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 256 256"><rect width="256" height="256"
+                                fill="none" /><polyline
+                                points="160 208 80 128 160 48" fill="none"
+                                stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="16" /></svg>
+                        <span>Previous</span>
+                    </button>
+
+                    <p id="card-number-status">Card <span
+                            id="card-initial">1</span> of <span
+                            id="card-final">40</span></p>
+
+                    <button>
+                        <span>Next</span>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 256 256"><rect width="256" height="256"
+                                fill="none" /><polyline
+                                points="96 48 176 128 96 208" fill="none"
+                                stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="16" /></svg>
+                    </button>
+                </div>
+            </section>
+
+            <section class="study-stats">
+
+                <h2>Study Statistics</h2>
+
+                <div class="stats">
+                    <div class="cards">
+                        <div class="cards-info">
+                            <span>Total Cards</span>
+                            <h2 id="total-cards">40</h2>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 256 256"><rect width="256"
+                                    height="256" fill="none" /><polyline
+                                    points="32 176 128 232 224 176" fill="none"
+                                    stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="16" /><polyline
+                                    points="32 128 128 184 224 128" fill="none"
+                                    stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="16" /><polygon
+                                    points="32 80 128 136 224 80 128 24 32 80"
+                                    fill="none" stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="16" /></svg>
+                        </div>
+                    </div>
+
+                    <div class="cards">
+                        <div class="cards-info">
+                            <span>Mastered</span>
+                            <h2 id="mastered-cards">11</h2>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 256 256"><rect width="256"
+                                    height="256" fill="none" /><path
+                                    d="M88,136a40,40,0,1,1-40,40v-6.73"
+                                    fill="none" stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="16" /><path
+                                    d="M168,136a40,40,0,1,0,40,40v-6.73"
+                                    fill="none" stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="16" /><path
+                                    d="M72,172H64A48,48,0,0,1,48,78.73V72a40,40,0,0,1,80,0V176"
+                                    fill="none" stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="16" /><path
+                                    d="M184,172h8a48,48,0,0,0,16-93.27V72a40,40,0,0,0-80,0"
+                                    fill="none" stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="16" /><path
+                                    d="M200,112h-4a28,28,0,0,1-28-28V80"
+                                    fill="none" stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="16" /><path
+                                    d="M56,112h4A28,28,0,0,0,88,84V80"
+                                    fill="none" stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="16" /></svg>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="cards-info">
+                            <span>In Progress</span>
+                            <h2 id="in-progress-cards">21</h2>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 256 256"><rect width="256"
+                                    height="256" fill="none" /><path
+                                    d="M128,88a32,32,0,0,1,32-32h72V200H160a32,32,0,0,0-32,32"
+                                    fill="none" stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="16" /><path
+                                    d="M24,200H96a32,32,0,0,1,32,32V88A32,32,0,0,0,96,56H24Z"
+                                    fill="none" stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="16" /></svg>
+                        </div>
+                    </div>
+
+                    <div class="cards">
+                        <div class="cards-info">
+                            <span>Total Cards</span>
+                            <h2 id="not-started-cards">40</h2>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 256 256"><rect width="256"
+                                    height="256" fill="none" /><path
+                                    d="M208,216H48a8,8,0,0,1-8-8V72L56,40H200l16,32V208A8,8,0,0,1,208,216Z"
+                                    fill="none" stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="16" /><line x1="40" y1="72"
+                                    x2="216" y2="72" fill="none"
+                                    stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="16" /><line x1="128" y1="104"
+                                    x2="128" y2="184" fill="none"
+                                    stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="16" /><polyline
+                                    points="96 152 128 184 160 152" fill="none"
+                                    stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="16" /></svg>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <footer></footer>
+        <script src="script.js"></script>
+    </body>
+</html>

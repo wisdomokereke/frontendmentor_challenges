@@ -1,0 +1,293 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: Helvetica, "sans-serif";
+}
+
+:root {
+  /* COLORS */
+  --dark-pink: #fc89e4;
+  --bg: #f7f3f0;
+  --teal: #47daca;
+  --yellow: #f6cc46;
+  --light-pink: #fd8ae5;
+  --blush-pink: #f173a3;
+  --blue: #93acec;
+  --brown: #2f1c0e;
+  --white: #fff;
+}
+
+svg {
+  height: 20px;
+  width: 20px;
+}
+
+span {
+  font-size: 0.8rem;
+}
+
+p {
+  font-size: 0.8rem;
+}
+body {
+  background-color: var(--bg);
+  height: 100%;
+}
+
+button {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  padding: 8px 16px;
+  border: 1px solid var(--brown);
+  border-radius: 100px;
+}
+
+button:hover {
+  box-shadow: 2px 2px 0px var(--brown);
+}
+
+button:active {
+  background-color: var(--yellow);
+  transition: background-color 0s ease-out;
+}
+
+/* header stylings */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 36px 48px;
+  align-items: center;
+}
+
+#logo {
+  height: 26px;
+  width: 26px;
+}
+
+.logomark {
+  display: flex;
+  gap: 8px;
+}
+
+.screen-toggle {
+  display: flex;
+  /* gap: 16px; */
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 100px;
+  padding: 4px;
+  border: 1px solid var(--brown);
+  font-size: 0.8rem;
+}
+
+.screen-toggle:active {
+  box-shadow: 2px 2px 0px var(--brown);
+}
+
+.study-mode {
+  padding: 8px 16px;
+  background-color: var(--yellow);
+  border-radius: 100px;
+  border: 1px solid var(--brown);
+}
+.all-cards {
+  padding: 8px 16px;
+}
+
+/* main stylings begins here */
+main {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  /* height: 100vh; */
+  align-content: center;
+  gap: 20px;
+  padding: 0px 48px;
+}
+
+main section:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid var(--brown);
+  border-radius: 10px;
+  background-color: #fff;
+  /* padding: 20px; */
+}
+
+main section:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid var(--brown);
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 20px;
+}
+
+main section:nth-child(1):hover,
+main section:nth-child(2):hover {
+  box-shadow: 2px 2px 0px var(--brown);
+}
+
+/* Section-1 row stylings starts here */
+
+/* >> row1 styings << */
+.row1 {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--brown);
+  padding: 20px;
+}
+
+.row1 > div,
+.row1 > div > div,
+.row1 > div > div > div {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* >> row2 styings << */
+.row2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--dark-pink);
+  padding: 14px;
+  margin: 14px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 0px var(--brown);
+  border: 1px solid var(--brown);
+  gap: 20px;
+}
+
+/* >> row3 styings << */
+.row3 {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  border-bottom: 1px solid var(--brown);
+  padding: 0px 20px 20px;
+}
+
+/* >> row4 styings << */
+.row4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px 20px;
+}
+
+#courses {
+  border: 1px solid var(--brown);
+  box-shadow: 2px 2px 0px var(--brown);
+  padding: 4px 8px;
+  border-radius: 100px;
+  background-color: var(--white);
+}
+
+.question-tab {
+  padding: 32px 0px;
+}
+
+/* Section-1 row stylings ends here */
+
+/* Section-2 stylings starts  here */
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid var(--brown);
+  border-radius: 10px;
+  box-shadow: 2px 2px 0px var(--brown);
+}
+
+.cards-info {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  padding: 10px;
+  gap: 24px;
+}
+
+.cards div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.cards:nth-child(2) div:nth-child(2) {
+  background-color: var(--teal);
+}
+
+.cards:nth-child(1) div:nth-child(2) {
+  background-color: var(--blue);
+}
+
+.cards:nth-child(3) div:nth-child(2) {
+  background-color: var(--blush-pink);
+}
+
+.cards:nth-child(4) div:nth-child(2) {
+  background-color: var(--light-pink);
+}
+/* Section-2 stylings starts  here */
+
+/* main stylings ends here */
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 440px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+
+  .logomark h3 {
+    display: none;
+  }
+
+  .row4 > button > span {
+    display: none;
+  }
+
+  .row4 button {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+  .row1 > div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #shuffle {
+    height: 38px;
+  }
+}

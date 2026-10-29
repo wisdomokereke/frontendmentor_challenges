@@ -1,0 +1,27 @@
+.offset-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  background-color: #ffde59;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  cursor: pointer;
+  
+  /* Hard offset drop shadow: offset-x | offset-y | blur-radius | color */
+  box-shadow: 4px 4px 0px #000000;
+  
+  /* Smooth interaction transition */
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.offset-button:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.offset-button:active {
+  transform: translate(4px, 4px);
+  box-shadow: 0px 0px 0px #000000;
+}

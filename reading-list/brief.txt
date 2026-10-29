@@ -1,0 +1,26 @@
+📝
+Brief
+Your challenge is to build Bookshelf, a personal reading tracker that lets users search for books via an API, organize them into shelves, track reading progress, set annual goals, and explore year-in-review statistics. There's no Figma file for this challenge — you'll make all the design decisions yourself.
+
+We provide a brand kit with design tokens, sample data with 45 curated books across 5 genres, and detailed specs in the starter code. You can use any tools you like to help you complete the challenge.
+
+We provide the data in local JSON and CSV files, allowing you to populate the content on first load in "guest mode". We recommend building this project as a full-stack application, though.
+
+Your users should be able to:
+
+Search for books by title, author, or ISBN and add them to their library
+Organize books into customizable shelves like "Want to Read", "Currently Reading", and "Read"
+Track reading progress and see visual progress indicators
+Set an annual reading goal and track their pace throughout the year
+Rate books and add personal notes
+Sign up for an account or try the app as a guest with pre-loaded content
+See a landing page that communicates the product's value
+View the optimal layout for the app depending on their device's screen size
+These features don't have a spec — you make the product decisions:
+
+Year-in-review & reading insights: How do users reflect on their reading year? What data do you show and how do you visualize it?
+Book discovery & recommendations: How do users find their next great read beyond the search box?
+Reading progress tracking UX: How do users update their progress, and what makes the interaction feel satisfying rather than tedious?
+Download the project and go through the README.md file. This will provide further details about the project and help you get set up.
+
+Want some support on the challenge? Join our community and ask questions in the help channel.

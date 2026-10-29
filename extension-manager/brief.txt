@@ -1,0 +1,44 @@
+npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch
+
+<header>
+            <div class="logomark"></div>
+            <button id="theme">
+            </button>
+        </header>
+
+        <main>
+            <div class="menu">
+                <h2>Extension List</h2>
+                <ul class="extensions-grouped">
+                    <li class="X" id="X">All</li>
+                    <li class="X" id="X">Active</li>
+                    <li class="X" id="X">Inactive</li>
+                </ul>
+            </div>
+
+            <div class="extension-list">
+                <!-- Items -->
+                <div class="extension" id="extension">
+                    <div class="extension-info">
+                        <div>
+                            <button></button>
+                        </div>
+                        <div>
+                            <h3 id="extension-name">Devlens</h3>
+                            <p id="about-extension">Quickly inspect page layouts
+                                and visualize element boundaries.</p>
+                        </div>
+                    </div>
+
+                    <div class="extension-more">
+                        <div>
+                            <button id="remove-btn">Remove</button>
+                            <div id="activate"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <script src="script.js"></script>
