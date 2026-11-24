@@ -1,11 +1,3 @@
-const one = document.getElementById("one");
-const two = document.getElementById("two");
-const three = document.getElementById("three");
-const display = document.getElementById("display");
-
-three.addEventListener(click, () => {
-  display.innerText = three;
-});
 
 // const names = ["Ada", "John", "Mary"];
 

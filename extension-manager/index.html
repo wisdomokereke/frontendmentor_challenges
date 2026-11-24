@@ -1,70 +1,88 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Extension Manager</title>
-        <link rel="stylesheet" href="./dist/output.css">
-    </head>
+const one = document.getElementById("one");
+const two = document.getElementById("two");
+const three = document.getElementById("three");
+const four = document.getElementById("four");
+const five = document.getElementById("five");
+const six = document.getElementById("six");
+const seven = document.getElementById("seven");
+const eight = document.getElementById("eight");
+const nine = document.getElementById("nine");
+const zero = document.getElementById("zero");
+const decimal = document.getElementById("decimal");
+const equals = document.getElementById("equals");
+const clear = document.getElementById("clear");
+const backspace = document.getElementById("backspace");
+const percentage = document.getElementById("percentage");
+const divide = document.getElementById("divide");
+const multiply = document.getElementById("multiply");
+const subtract = document.getElementById("subtract");
+const add = document.getElementById("add");
+const display = document.getElementById("display");
 
-    <body class="p-4">
-        <div class="container h-full p-4 border rounded-2xl" id="calculator">
-            <input class="bg-olive-800 w-full h-24 mb-4 rounded-lg"
-                id="display" readonly>
-            <div class=" grid grid-cols-4 gap-3" id="keys">
-                <button
-                    class="bg-amber-400 rounded-full h-12 w-12 justify-self-center"
-                    id="plus">+</button>
-                <button
-                    class="rounded-full bg-olive-800 h-12 w-12 justify-self-center text-white"
-                    id="seven">7</button>
-                <button
-                    class="rounded-full bg-olive-800 h-12 w-12 justify-self-center text-white"
-                    id="eight">8</button>
-                <button
-                    class="rounded-full bg-olive-800 h-12 w-12 justify-self-center text-white"
-                    id="nine">9</button>
-                <button
-                    class="bg-amber-400 rounded-full h-12 w-12 justify-self-center"
-                    id="minus">-</button>
-                <button
-                    class="rounded-full bg-olive-800 h-12 w-12 justify-self-center text-white"
-                    id="four">4</button>
-                <button
-                    class="rounded-full bg-olive-800 h-12 w-12 justify-self-center text-white"
-                    id="five">5</button>
-                <button
-                    class="rounded-full bg-olive-800 h-12 w-12 justify-self-center text-white"
-                    id="six">6</button>
-                <button
-                    class="bg-amber-400 rounded-full h-12 w-12 justify-self-center"
-                    id="multiply">*</button>
-                <button
-                    class="rounded-full bg-olive-800 h-12 w-12 justify-self-center text-white"
-                    id="one">1</button>
-                <button
-                    class="rounded-full bg-olive-800 h-12 w-12 justify-self-center text-white"
-                    id="two">2</button>
-                <button
-                    class="rounded-full bg-olive-800 h-12 w-12 justify-self-center text-white"
-                    id="three">3</button>
-                <button
-                    class="bg-amber-400 rounded-full h-12 w-12 justify-self-center"
-                    id="divide">/</button>
-                <button
-                    class="rounded-full bg-olive-800 h-12 w-12 justify-self-center text-white"
-                    id="zero">0</button>
-                <button
-                    class="rounded-full bg-olive-800 h-12 w-12 justify-self-center text-white"
-                    id="point">.</button>
-                <button
-                    class="rounded-full bg-olive-800 h-12 w-12 justify-self-center text-white"
-                    id="equals">=</button>
-                <button
-                    class="bg-amber-400 rounded-full h-12 w-12 justify-self-center"
-                    id="clear">C</button>
-            </div>
-        </div>
-        <script src="script.js"></script>
-    </body>
-</html>
+one.addEventListener("click", () => {
+  display.innerText += "1";
+})
+
+two.addEventListener("click", () => {
+  display.innerText += "2";
+})
+
+three.addEventListener("click", () => {
+  display.innerText += "3";
+})
+
+four.addEventListener("click", () => {
+  display.innerText += "4";
+})
+
+five.addEventListener("click", () => {
+  display.innerText += "5";
+})  
+
+six.addEventListener("click", () => {
+  display.innerText += "6";
+})
+
+seven.addEventListener("click", () => {
+  display.innerText += "7";
+})  
+
+eight.addEventListener("click", () => {
+  display.innerText += "8";
+})
+
+nine.addEventListener("click", () => {
+  display.innerText += "9";
+})
+
+zero.addEventListener("click", () => {
+  display.innerText += "0";
+})
+
+decimal.addEventListener("click", () => {
+  display.innerText += ".";
+})  
+
+percentage.addEventListener("click", () => {
+  display.innerText += "%";
+})  
+
+add.addEventListener("click", () => {
+  display.innerText += "+";
+})
+
+subtract.addEventListener("click", () => {
+  display.innerText += "-";
+})  
+
+equals.addEventListener("click", () => {
+  display.innerText = eval(display.innerText);
+});
+
+clear.addEventListener("click", () => {
+  clearDisplay();
+});
+
+function clearDisplay() {
+  display.innerText = "0";
+}

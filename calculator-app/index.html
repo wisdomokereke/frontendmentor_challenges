@@ -1,12 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=, initial-scale=1.0">
-        <title>Calculator</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extension Manager</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
 
-    <body>
+  <body>
 
-    </body>
+    <div class="calculator container grid grid-cols-4 gap-2 border-2">
+
+      <div id="display" class="display col-span-4 text-right bg-gray-200">0</div>
+
+      <!-- Buttons -->
+        <button id="clear" class="bg-red-500 text-white">AC</button>
+        <button id="backspace">⌫</button>
+        <button id="percentage">%</button>
+        <button id="divide">÷</button>
+
+        <button id="seven">7</button>
+        <button id="eight">8</button>
+        <button id="nine">9</button>
+        <button id="multiply">×</button>
+
+        <button id="four">4</button>
+        <button id="five">5</button>
+        <button id="six">6</button>
+        <button id="subtract">-</button>
+
+        <button id="one">1</button>
+        <button id="two">2</button>
+        <button id="three">3</button>
+        <button id="add">+</button>
+
+        <button id="zero">0</button>
+        <button id="decimal">.</button>
+        <button id="equals" class="col-span-2 bg-blue-800 text-white">=</button>
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
